@@ -1,5 +1,4 @@
 const text = document.getElementById("text");
-const button = document.getElementById("rotate");
 
 let angle = 0;
 
