@@ -48,9 +48,9 @@ assessmentButton.addEventListener(
 
     anchor.setAttribute('href', hrefValue);
     anchor.setAttribute('class', 'twitter-hashtag-button');
+    anchor.setAttribute('data-text', '診断結果の文章');
     anchor.setAttribute('data-text', result);
-    anchor.innerText = 'Tweet #あなたのいいところ';
-
+    
     tweetDivision.appendChild(anchor);
 
  
