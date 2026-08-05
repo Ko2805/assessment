@@ -1,10 +1,6 @@
-#text {
-  font-size: 30px;
-  transition: transform 300s, color 0.5s;
-
-  /* 3D回転の奥行きを設定 */
-  transform-style: preserve-3d;
-
-  /* 視点を設定 */
-  perspective: 500px;
+.face {
+  color: darkblue;
+}
+.back {
+   color: lightgray;
 }
