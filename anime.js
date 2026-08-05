@@ -1,3 +1,6 @@
+const text = document.getElementById("text");
+const button = document.getElementById("rotate");
+
 let degree = 0;
 const colors = ["red", "yello", "green", "blue"];
 setInterval(() => {
