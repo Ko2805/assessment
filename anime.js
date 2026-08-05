@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-  let heading = document.getElementById('heading');
+  let heading = document.getElementById('lucky');
 
   let degree = 0;
 
