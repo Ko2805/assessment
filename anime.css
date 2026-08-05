@@ -1,10 +1,10 @@
 #text {
-  font-size: 40px;
-  color: blue;
+  font-size: 30px;
+  transition: transform 0.5s, color 0.5s;
 
-  transition:
-    transform 0.5s,
-    color 0.5s;
+  /* 3D回転の奥行きを設定 */
+  transform-style: preserve-3d;
 
-transform: rotateX(90deg);
+  /* 視点を設定 */
+  perspective: 500px;
 }
