@@ -1,3 +1,5 @@
+document.addEventListener('DOMContentLoaded', function () {
+
   let heading = document.getElementById('heading');
 
   let degree = 0;
@@ -10,7 +12,6 @@
       degree = 0;
     }
 
-    // 回転角度によって色を変更
     if (degree < 90) {
       heading.className = 'color1';
 
@@ -24,11 +25,9 @@
       heading.className = 'color4';
     }
 
-    // X方向に回転
     heading.style.transform = 'rotateX(' + degree + 'deg)';
   }
 
-  // 20ミリ秒ごとに実行
   setInterval(rotateHeading, 20);
 
 });
