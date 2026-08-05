@@ -1,29 +1,34 @@
-let heading = document.getElementById('lucky');
+document.addEventListener('DOMContentLoaded', function () {
 
-let degree = 0;
+document.addEventListener('DOMContentLoaded', function () {
+  let heading = document.getElementById('lucky');
 
-function rotateLucky() {
+  let degree = 0;
 
-  degree = degree + 6;
+  function rotateLucky() {
 
-  if (degree >= 360) {
-    degree = 0;
+    degree = degree + 6;
+
+    if (degree >= 360) {
+      degree = 0;
+    }
+
+    if (degree < 90) {
+      lucky.className = 'color1';
+
+    } else if (degree < 180) {
+      lucky.className = 'color2';
+
+    } else if (degree < 270) {
+      lucky.className = 'color3';
+
+    } else {
+      lucky.className = 'color4';
+    }
+
+    lucky.style.transform = 'rotateX(' + degree + 'deg)';
   }
-
-  if (degree < 90) {
-    lucky.className = 'color1';
-
-  } else if (degree < 180) {
-    lucky.className = 'color2';
-
-  } else if (degree < 270) {
-    lucky.className = 'color3';
-
-  } else {
-    lucky.className = 'color4';
-  }
-
-  lucky.style.transform = 'rotateX(' + degree + 'deg)';
-}
 
 setInterval(rotateLucky, 20);
+
+});
