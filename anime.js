@@ -1,5 +1,3 @@
-alert("JavaScriptが動いています！");
-
 document.addEventListener('DOMContentLoaded', function () {
 
   let heading = document.getElementById('heading');
