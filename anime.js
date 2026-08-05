@@ -1,13 +1,13 @@
 const text = document.getElementById("text");
 const button = document.getElementById("rotate");
 
-let degree = 0;
+let angle = 0;
 const colors = ["red", "yello", "green", "blue"];
 setInterval(() => {
-  degree += 90;
+  angle += 90;
 
-  text.style.transform = `rotate(${degree}deg)`;
+  text.style.transform = `rotate(${angle}deg)`;
 
-  const colorIndex = (degree / 90) % 4;
+  const colorIndex = (angle / 90) % 4;
   text.style.color = colors[colorIndex];
 }, 1000);
