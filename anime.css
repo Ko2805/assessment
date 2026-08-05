@@ -1,1 +1,5 @@
-
+#text {
+  font-size: 40px;
+  color: blue;
+  transition: transform 0.5s, color 0.5s;
+}
