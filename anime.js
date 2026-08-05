@@ -1,33 +1,36 @@
-let heading = document.getElementById('heading');
+document.addEventListener('DOMContentLoaded', function () {
 
-let degree = 0;
+  let heading = document.getElementById('heading');
 
-// 最初の色
-heading.className = 'color1';
+  let degree = 0;
 
-function rotateHeading() {
-  degree = degree + 6;
+  function rotateHeading() {
 
-  if (degree >= 360) {
-    degree = 0;
+    degree = degree + 6;
+
+    if (degree >= 360) {
+      degree = 0;
+    }
+
+    // 回転角度によって色を変更
+    if (degree < 90) {
+      heading.className = 'color1';
+
+    } else if (degree < 180) {
+      heading.className = 'color2';
+
+    } else if (degree < 270) {
+      heading.className = 'color3';
+
+    } else {
+      heading.className = 'color4';
+    }
+
+    // X方向に回転
+    heading.style.transform = 'rotateX(' + degree + 'deg)';
   }
 
-  // 回転角度によって色を変更
-  if (degree < 90) {
-    heading.className = 'color1';
+  // 20ミリ秒ごとに実行
+  setInterval(rotateHeading, 20);
 
-  } else if (degree < 180) {
-    heading.className = 'color2';
-
-  } else if (degree < 270) {
-    heading.className = 'color3';
-
-  } else {
-    heading.className = 'color4';
-  }
-
-  // X軸方向に回転
-  heading.style.transform = 'rotateX(' + degree + 'deg)';
-}
-
-setInterval(rotateHeading, 20);
+});
