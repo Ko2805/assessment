@@ -1,5 +1,3 @@
-document.addEventListener('DOMContentLoaded', function () {
-
   let heading = document.getElementById('heading');
 
   let degree = 0;
