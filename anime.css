@@ -1,1 +1,24 @@
+body {
+  perspective: 500px;
+}
 
+#heading {
+  display: inline-block;
+  font-size: 30px;
+}
+
+.color1 {
+  color: green;
+}
+
+.color2 {
+  color: blue;
+}
+
+.color3 {
+  color: red;
+}
+
+.color4 {
+  color: yellow;
+}
