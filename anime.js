@@ -7,10 +7,10 @@ function rotateHeading() {
   degree = degree % 360;
 
   if (degree === 0) {
-    heading.setAttribute('class', 'face');
+    heading.setAttribute('class', 'color1');
 
   } else if (degree === 90) {
-    heading.setAttribute('class', 'back');
+    heading.setAttribute('class', 'color2');
 
   } else if (degree === 180) {
     heading.setAttribute('class', 'color3');
