@@ -1,9 +1,9 @@
-.face {
-  color: darkblue;
+.color1 {
+  color: green;
 }
 
-.back {
-  color: lightgray;
+.color2 {
+  color: blue;
 }
 
 .color3 {
@@ -11,5 +11,5 @@
 }
 
 .color4 {
-  color: green;
+  color: yellow;
 }
