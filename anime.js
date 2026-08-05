@@ -1,15 +1,14 @@
-const text = document.getElementById("text");
-const button = document.getElementById("rotate");
-
-let angle = 0;
-
-const colors = ["blue", "green", "yellow", "red"];
-
-button.addEventListener("click", () => {
-  angle += 90;
-
-  text.style.transform = `rotateX(${angle}deg)`;
-
-  const colorIndex = (angle / 90) % 4;
-  text.style.color = colors[colorIndex];
-});
+let heading = document.getElementById('heading');
+ heading.style.transform = 'rotateX(60deg)';
+  let degree = 0;
+ function rotateHeading() {
+   degree = degree + 6; 
+   degree = degree % 360;
+   if (degree === 90) {
+     heading.setAttribute('class', 'back');
+   } else if (degree === 270) {
+     heading.setAttribute('class', 'face');
+   }
+   heading.style.transform = 'rotateX(' + degree + 'deg)';
+ }
+ setInterval(rotateHeading, 20);
