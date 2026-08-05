@@ -5,7 +5,7 @@ let angle = 0;
 
 const colors = ["blue", "green", "yellow", "red"];
 
-setInterval(() => {
+button.addEventListener("click", () => {
   angle += 90;
 
   text.style.transform = `rotateX(${angle}deg)`;
