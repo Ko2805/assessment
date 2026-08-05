@@ -1,6 +1,6 @@
 #text {
   font-size: 30px;
-  transition: transform 60s, color 60s;
+  transition: transform 300s, color 0.5s;
 
   /* 3D回転の奥行きを設定 */
   transform-style: preserve-3d;
