@@ -2,7 +2,8 @@ const text = document.getElementById("text");
 const button = document.getElementById("rotate");
 
 let angle = 0;
-const colors = ["red", "yello", "green", "blue"];
+
+const colors = ["blue", "green", "yellow", "red"];
 setInterval(() => {
   angle += 90;
 
